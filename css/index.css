@@ -2,6 +2,7 @@ body{
     background-color: rgb(31, 37, 65);
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 #banner-info{
@@ -9,11 +10,12 @@ body{
     flex-wrap: wrap;
     max-width: 400px;
     position: relative;
-    margin-top: 10%;
+    margin-top: 5%;
     position: relative;
     right: 10%;
     /*border: white thin solid;*/
     align-content: center;
+    z-index: 1;
 
 }
 
@@ -30,6 +32,36 @@ body{
     max-height: 300px;
     border-radius: 10%;
     position: relative;
-    left: 200%;
+    left: 250%;
     bottom: 40%;
+}
+
+#mountain-range > img{
+    max-width: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 20%;
+    right: 0%;
+}
+
+#tree-range > img{
+    z-index: 3;
+    position: absolute;
+    right: 0%;
+    top: -20%;
+}
+
+#footer{
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+#stars{
+    z-index: 0;
+    width: 200%;
+    height: 200%;
+    position: absolute;
 }
