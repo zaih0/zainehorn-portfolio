@@ -1,67 +1,74 @@
-body{
-    background-color: rgb(31, 37, 65);
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-#banner-info{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 400px;
+.content {
     position: relative;
-    margin-top: 5%;
-    position: relative;
-    right: 10%;
-    /*border: white thin solid;*/
-    align-content: center;
-    z-index: 1;
-
-}
-
-#banner-text{
-    position: relative;
-    top: 20%;
+    z-index: 100; /* Ensures content is above the parallax layers */
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional background for contrast */
+  }
+  
+  .banner-info {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .banner-info h1 {
+    font-size: 3em;
+    margin-right: 20px;
+    position: relative;
+    left: 100px;
+    top: 220px;
     color: white;
-}
-
-#banner-image > img{
-    max-width: 300px;
-    max-height: 300px;
-    border-radius: 10%;
+  }
+  
+  .banner-info img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px; /* Optional styling */
     position: relative;
-    left: 250%;
-    bottom: 40%;
-}
+    right: 600px;
+    top: 200px;
+  }
 
-#mountain-range > img{
-    max-width: 100%;
-    z-index: 2;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  .parallax-container {
+    position: relative;
+    height: 3000px; /* Adjust based on the effect */
+  }
+  
+  .parallax-layer {
     position: absolute;
-    top: 20%;
-    right: 0%;
-}
-
-#tree-range > img{
-    z-index: 3;
-    position: absolute;
-    right: 0%;
-    top: -20%;
-}
-
-#footer{
-    background-color: rgb(36, 36, 36);
+    top: 0;
+    left: 0;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-}
-
-#stars{
-    z-index: 0;
-    width: 200%;
-    height: 200%;
-    position: absolute;
-}
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  
+  .layer1 { background-image: url('../img/pixil-layer-0.png'); z-index: 1;}
+  .layer2 { background-image: url('../img/pixil-layer-1.png'); z-index: 2;}
+  .layer3 { background-image: url('../img/pixil-layer-2.png'); z-index: 3;}
+  .layer4 { background-image: url('../img/pixil-layer-3.png'); z-index: 4;} 
+  .layer5 { background-image: url('../img/pixil-layer-4.png'); z-index: 5;} 
+  .layer6 { background-image: url('../img/pixil-layer-5.png'); z-index: 6;} 
+  .layer7 { background-image: url('../img/pixil-layer-6.png'); z-index: 7;} 
+  .layer8 { background-image: url('../img/pixil-layer-7.png'); z-index: 8;} 
+  .layer9 { background-image: url('../img/pixil-layer-8.png'); z-index: 9;} 
+  .layer10 { background-image: url('../img/pixil-layer-9.png'); z-index: 10;} 
+  .layer11 { background-image: url('../img/pixil-layer-10.png'); z-index: 11;} 
+  .layer12 { background-image: url('../img/pixil-layer-11.png'); z-index: 12;} 
+  .layer13 { background-image: url('../img/pixil-layer-12.png'); z-index: 13;} 
+  .layer14 { background-image: url('../img/pixil-layer-13.png'); z-index: 14;} 
+  .layer15 { background-image: url('../img/pixil-layer-14.png'); z-index: 15; opacity: 0.5;}
