@@ -56,6 +56,8 @@
     background-repeat: no-repeat;
     z-index: -1;
   }
+
+ 
   
   .layer1 { background-image: url('../img/pixil-layer-0.png'); z-index: 1;}
   .layer2 { background-image: url('../img/pixil-layer-1.png'); z-index: 2;}
@@ -72,3 +74,64 @@
   .layer13 { background-image: url('../img/pixil-layer-12.png'); z-index: 13;} 
   .layer14 { background-image: url('../img/pixil-layer-13.png'); z-index: 14;} 
   .layer15 { background-image: url('../img/pixil-layer-14.png'); z-index: 15; opacity: 0.5;}
+
+
+
+  
+
+  /* Tablet screens (between 768px and 1024px) */
+@media (max-width: 1024px) {
+  .banner-info h1 {
+    font-size: 2.5em;
+  }
+
+  .banner-info img {
+    width: 250px;
+  }
+}
+
+/* Mobile screens (less than 768px) */
+@media (max-width: 768px) {
+
+    body{
+      background-color: rgb(52, 52, 121);
+    }
+
+
+  .banner-info {
+    flex-direction: column; /* Stack text and image vertically */
+    text-align: center;
+    position: relative;
+    right: 350px;
+  }
+
+  .banner-info h1 {
+    font-size: 2em;
+    /*margin: 0 0 10px 0;*/
+    max-width: 10px;
+    position: relative;
+    left: 10px;
+  }
+
+  .banner-info img {
+    width: 200px;
+    position: relative;
+    left: 100px;
+    margin-top: 100px;
+  }
+
+  .parallax-container{
+    position: relative;
+    width: 200vw;
+  }
+
+  .parallax-layer {
+    background-size: cover;
+  }
+}
+
+/* Parallax Layer Styles */
+.parallax-layer {
+  background-size: cover;
+  background-position: center;
+}
