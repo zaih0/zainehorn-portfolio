@@ -38,6 +38,7 @@
   body, html {
     height: 100%;
     overflow-x: hidden;
+    background-color: rgb(5, 20, 5);
   }
   
   .parallax-container {
@@ -135,3 +136,16 @@
   background-size: cover;
   background-position: center;
 }
+
+.door-button{
+  width: 100px;
+  height: 140px;
+  border-radius: 10px;
+  background-image: url("../img/pixil-layer-door.png");
+  background-size: cover;
+  position: relative;
+  bottom: 260px;
+  left: 800px;
+  z-index: 100;
+}
+
