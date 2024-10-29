@@ -15,7 +15,7 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 15px 20px;
     display: flex;
     justify-content: center;
@@ -27,19 +27,14 @@ body{
     gap: 20px;
   }
   
-  .navbar li  {
-    color: white;
+  .navbar li a {
+    color: black;
     text-decoration: none;
     font-weight: bold;
     padding: 8px 15px;
+    transition: transform 0.3s ease;
   }
   
-  .navbar li a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Lighter hover effect */
-    border-radius: 5px;
-  }
-
-
 #interactive{
     background-color: white;
     color: black;
@@ -53,4 +48,18 @@ body{
     left: 45%;
     top: 30%;
     padding: 10px;
+}
+
+.navbar li a:hover {
+  transform: scale(1.2);
+}
+
+.navbar li a img {
+  width: 24px; 
+  height: 24px;
+  transition: transform 0.3s ease; 
+}
+
+.navbar li a:hover img {
+  transform: scale(1.2);
 }
