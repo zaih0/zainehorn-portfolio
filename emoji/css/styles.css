@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    margin: 0;
+}
+
+.emoji {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye {
+    width: 120px;
+    height: 120px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+
+.left-eye {
+    top: 200px;
+    left: 200px;
+}
+
+.right-eye {
+    top: 200px;
+    right: 200px;
+}
+
+.mouth {
+    width: 560px;
+    height: 280px;
+    background-color: black;
+    border: 20px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 140px;
+    border-radius: 10%;
+}
+
+.topTeeth {
+    display: flex;
+    justify-content: space-around;
+    animation: teethAbove 5s infinite;
+    position: relative;
+}
+
+.bottomTeeth{
+    display: flex;
+    justify-content: space-around;
+    animation: teethBottom 5s infinite;
+    position: relative;
+
+}
+
+.tooth {
+    width: 130px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+@keyframes teethAbove {
+    0%   {top: 0px;}
+    25%  {top: 50px;}
+    75%  {top: 25px}
+    100% {top: 100px;}
+}
+
+@keyframes teethBottom {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+    
+}
