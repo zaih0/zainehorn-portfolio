@@ -76,9 +76,40 @@
   .layer14 { background-image: url('../img/pixil-layer-13.png'); z-index: 14;} 
   .layer15 { background-image: url('../img/pixil-layer-14.png'); z-index: 15; opacity: 0.5;}
 
+  .door-button{
+    width: 100px;
+    height: 140px;
+    border-radius: 10px;
+    background-image: url("../img/pixil-layer-door.png");
+    background-size: cover;
+    position: relative;
+    bottom: 260px;
+    left: 800px;
+    z-index: 100;
+  }
 
+@media (min-width : 1028px) {
+  .banner-info{
+    flex-direction: column;
+    position: relative;
+    right: 10%;
 
-  
+  }
+
+  .banner-info img{
+    position: relative;
+    left: 5%;
+    margin: 50px;
+  }
+
+  a {
+    position: relative;
+    right: 12%;
+    bottom: 21%;
+  }
+
+}
+
 
   /* Tablet screens (between 768px and 1024px) */
 @media (max-width: 1024px) {
@@ -88,6 +119,7 @@
 
   .banner-info img {
     width: 250px;
+
   }
 }
 
@@ -108,7 +140,7 @@
 
   .banner-info h1 {
     font-size: 2em;
-    /*margin: 0 0 10px 0;*/
+    margin: 0 0 10px 0;
     max-width: 10px;
     position: relative;
     left: 10px;
@@ -137,15 +169,4 @@
   background-position: center;
 }
 
-.door-button{
-  width: 100px;
-  height: 140px;
-  border-radius: 10px;
-  background-image: url("../img/pixil-layer-door.png");
-  background-size: cover;
-  position: relative;
-  bottom: 260px;
-  left: 800px;
-  z-index: 100;
-}
 
